@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para las fuentes de la pagina-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <!--hoja de estilos-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--El normalize sirve para que todos los navegadores puedan tener el mismo tipo de modelo tanto en css como en html-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Icono de la tienda-->
+    <link rel="shortcut icon" href="shop.ico" type="image/x-icon">
+    <title>Front-end Store</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="logo">
+        </a>
+    </header>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+    <h1>Producto Generico</h1>
+    <div class="camisas">
+        <img class="camisas__imagen" src="img/11.jpg" alt="imagen del producto">
+        <div class="camisas__contenido">
+            <p>Curabitur placerat nisi egestas, pharetra leo nec, pretium lorem. Quisque molestie, sapien ut maximus malesuada, ante nulla eleifend velit, 
+                non laoreet velit libero posuere est. Cras in odio sem. Quisque sed risus sit amet sem consequat interdum eget sed erat. Suspendisse tempor 
+                est ex, et consequat erat lacinia at. Fusce placerat, nulla sed aliquet pretium, nulla nibh feugiat nulla, id semper augue diam ac eros. 
+                Nulla vitae sapien rutrum nulla hendrerit elementum. Vivamus tempus elit in nulla condimentum auctor.</p>
+                <form class="formulario">
+                    <select class="formulario__campo">
+                        <option disabled selected>-- Selecciona la Opcion --</option>
+                        <option value="">Chica</option>
+                        <option value="">Mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="agregar al carrito">
+                </form>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Todos los derechos reservados para Esdras Jehiel</p>
+    </footer>
+</body>
+</html>
